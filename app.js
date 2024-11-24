@@ -5,6 +5,6 @@ http
     res.write("On the way to be a full snack engineer - this is a test commit");
     res.end();
   })
-  .listen(3000);
+  .listen(8080);
 
 console.log("Server started on port 3000");
