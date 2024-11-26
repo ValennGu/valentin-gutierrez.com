@@ -76,7 +76,7 @@ const db = new sqlite.Database(":memory");
  */
 db.serialize(() => {
   db.run(`
-      CREATE TABLE visitors (
+      CREATE TABLE if NOT EXISTS visitors (
         count INTEGER,
         time TEXT
       )
